@@ -888,6 +888,10 @@
 
 @media(max-width:780px) {
 
+    #popular-recepie-heading {
+        font-size: 36px;
+    }
+
     #footer {
         margin-top: 120px;
     }
@@ -1028,6 +1032,11 @@
 }
 
 @media(max-width:650px) {
+
+    #popular-recepie-heading {
+        font-size: 28px;
+    }
+
     #search-box {
         width: 500px;
     }
