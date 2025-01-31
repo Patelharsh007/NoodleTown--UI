@@ -340,7 +340,7 @@
     display: inline-block;
     width: 1135px;
     height: 68px;
-    margin: 67px auto;
+    margin: 67px auto auto;
 
     /* text */
     font-family: "Inter", serif;
@@ -376,9 +376,10 @@
 
 
 #buttons-container {
-    width: 720px;
+    width: 100%;
     margin: auto;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 15px;
     margin-bottom: 20px;
@@ -565,6 +566,7 @@
     z-index: 3;
 }
 
+/* bag icon */
 .fa-lock {
     margin-top: 4px;
     margin-left: 6px;
@@ -1101,7 +1103,7 @@
 @media(max-width:780px) {
 
     #popular-recepie-heading {
-        font-size: 36px;
+        font-size: 42px;
     }
 
     #footer {
@@ -1133,14 +1135,7 @@
 
 
 @media(max-width:720px) {
-    #buttons-container {
-        width: 200px;
-        margin: auto;
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-        margin-bottom: 20px;
-    }
+
 
     #popular-recepies-header-class #img1 {
         width: 60px;
@@ -1295,7 +1290,7 @@
 @media(max-width:650px) {
 
     #popular-recepie-heading {
-        font-size: 28px;
+        font-size: 36px;
     }
 }
 
@@ -1501,6 +1496,10 @@
 }
 
 @media(max-width:440px) {
+
+    #popular-recepie-heading {
+        font-size: 28px;
+    }
 
     #instaBox #insta-link a,
     #instaBox p {
