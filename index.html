@@ -125,11 +125,12 @@
             <div id="buttons-container">
                 <button data-category="Pizza" onclick="changeImages('Pizza', this)" class="active">Pizza</button>
                 <button data-category="Burger" onclick="changeImages('Burger', this)">Burger</button>
-                <button data-category="Slides" onclick="changeImages('Chinese', this)">Chinese</button>
-                <button data-category="Dessert" onclick="changeImages('Drinks', this)">Drinks</button>
-                <button data-category="Drinks" onclick="changeImages('Dessert', this)">Dessert</button>
+                <button data-category="Chinese" onclick="changeImages('Chinese', this)">Chinese</button>
+                <button data-category="Drinks" onclick="changeImages('Drinks', this)">Drinks</button>
+                <button data-category="Dessert" onclick="changeImages('Dessert', this)">Dessert</button>
             </div>
             <div id="main-div">
+              <div class="outer-box">
                 <div class="box">
                   <p class="label">Popular</p>
                   <img src="images/Pizza/Pizza1.jpeg" alt="" />
@@ -141,12 +142,15 @@
                     <p>Dough, Mozzarella, Cheddar, Blue, Parmesan</p>
                     <h2>7000NGN</h2>
                   </div>
-                  <div class="triangle"></div>
+                  
+                </div>
+                <div class="triangle"></div>
                   <div class="circle">
                     <i class="fa-solid fa-lock selected"></i>
                   </div>
-                </div>
+              </div>
           
+              <div class="outer-box">
                 <div class="box">
                   <img src="images/Pizza/Pizza2.jpeg" alt="" />
                   <div id="outer-div">
@@ -157,12 +161,14 @@
                     <p>Dough, Mozzarella, Cheddar, Blue, Parmesan</p>
                     <h2>7000NGN</h2>
                   </div>
-                  <div class="triangle"></div>
+                </div>
+                <div class="triangle"></div>
                   <div class="circle">
                     <i class="fa-solid fa-lock"></i>
                   </div>
-                </div>
+              </div>
           
+              <div class="outer-box">
                 <div class="box">
                   <p class="label">Popular</p>
                   <img src="images/Pizza/Pizza3.jpeg" alt="" />
@@ -174,12 +180,14 @@
                     <p>Dough, Mozzarella, Cheddar, Blue, Parmesan</p>
                     <h2>7000NGN</h2>
                   </div>
-                  <div class="triangle"></div>
+                </div>
+                <div class="triangle"></div>
                   <div class="circle">
                     <i class="fa-solid fa-lock selected"></i>
                   </div>
-                </div>
-          
+               </div>
+
+              <div class="outer-box">
                 <div class="box">
                   <img src="images/Pizza/Pizza4.jpeg" alt="" />
                   <div id="outer-div">
@@ -190,12 +198,14 @@
                     <p>Dough, Mozzarella, Cheddar, Blue, Parmesan</p>
                     <h2>7000NGN</h2>
                   </div>
-                  <div class="triangle"></div>
+                </div>
+                <div class="triangle"></div>
                   <div class="circle">
                     <i class="fa-solid fa-lock"></i>
                   </div>
-                </div>
+              </div>
           
+              <div class="outer-box">
                 <div class="box">
                   <img src="images/Pizza/Pizza5.jpeg" alt="" />
                   <div id="outer-div">
@@ -206,12 +216,14 @@
                     <p>Dough, Mozzarella, Cheddar, Blue, Parmesan</p>
                     <h2>7000NGN</h2>
                   </div>
-                  <div class="triangle"></div>
+                </div>
+                <div class="triangle"></div>
                   <div class="circle">
                     <i class="fa-solid fa-lock"></i>
                   </div>
-                </div>
+              </div>
           
+              <div class="outer-box">
                 <div class="box">
                   <img src="images/Pizza/Pizza6.jpeg" alt="" />
                   <div id="outer-div">
@@ -222,12 +234,13 @@
                     <p>Dough, Mozzarella, Cheddar, Blue, Parmesan</p>
                     <h2>7000NGN</h2>
                   </div>
-                  <div class="triangle"></div>
+                </div>
+                <div class="triangle"></div>
                   <div class="circle">
                     <i class="fa-solid fa-lock selected"></i>
                   </div>
                 </div>
-              </div>
+            </div>
         </section>
 
         <section id="image-banner">
@@ -307,6 +320,7 @@
         const pizzaButton = document.querySelector('button[data-category="Pizza"]');
         pizzaButton.classList.add("active");
     });
+    
 
     </script>
 </body>
