@@ -366,8 +366,172 @@
 
 /* image-carousel */
 #image-carousel {
-    margin-top: 10px;
+    margin: 10px 20px;
 }
+
+.box img {
+    background-color: transparent;
+    width: 203px;
+    height: 208px;
+    box-shadow: 10px 5px 10px 0px rgba(143, 92, 32, 0.1);
+    box-shadow: 20px 10px 20px 0px rgba(143, 92, 32, 0.1);
+    margin: 43px 54px 0;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.box {
+    width: 311px;
+    height: 510px;
+    background: rgb(255, 255, 255);
+    border: 2px solid rgba(236, 238, 246, 1);
+    border-radius: 20px;
+    /* Ensures they don't shrink or grow */
+    flex: 0 0 auto;
+    position: relative;
+}
+
+.box #div1 {
+    margin-top: 20px;
+    height: 35px;
+    /* padding-top: 20px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+#div1 .name {
+    /* font-family: Inter; */
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 25.2px;
+    text-align: left;
+}
+
+#div1 p {
+    /* font-family: Inter; */
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16.8px;
+    text-align: right;
+
+}
+
+
+#outer-div p {
+    /* font-family: Inter; */
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16.8px;
+    text-align: left;
+    padding-bottom: 15px;
+    margin: 5px 0;
+}
+
+#outer-div h2 {
+    /* font-family: Inter; */
+    margin-top: 20px;
+    padding: 15px;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 33.6px;
+    text-align: center;
+    color: rgba(18, 17, 70, 1);
+}
+
+.box #outer-div {
+    padding: 35px;
+}
+
+#main-div {
+    display: flex;
+    gap: 48px;
+    width: 100vw;
+    /* Enables horizontal scrolling */
+    overflow-x: auto;
+    /* Prevents wrapping */
+    white-space: nowrap;
+    /* Adds spacing for better visibility */
+    padding: 30px 0;
+    /* Hides scrollbar on Firefox */
+    scrollbar-width: thin;
+    /* Makes scrollbar transparent */
+    scrollbar-color: transparent transparent;
+}
+
+/* Hide scrollbar for Chrome, Safari, and Edge */
+#main-div::-webkit-scrollbar {
+    height: 8px;
+    /* Controls scrollbar height */
+}
+
+#main-div::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.2);
+    /* Subtle scrollbar */
+    border-radius: 10px;
+}
+
+#main-div::-webkit-scrollbar-track {
+    background: transparent;
+    /* Makes track transparent */
+}
+
+.label {
+    width: 73px;
+    height: 21px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16.8px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding-top: 4px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    border-radius: 2px;
+}
+
+.triangle {
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 95%;
+    left: 40%;
+    border-right: 2px solid rgba(236, 238, 246, 1);
+    border-bottom: 2px solid rgba(236, 238, 246, 1);
+    border-radius: 0 0 20px 0;
+}
+
+.circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid rgba(236, 238, 246, 1);
+    position: absolute;
+    top: 97%;
+    left: 43%;
+    z-index: 3;
+}
+
+.fa-lock {
+    margin-top: 4px;
+    margin-left: 6px;
+    display: none;
+}
+
+.selected {
+    display: block;
+}
+
+.circle:hover {
+    background-color: rgba(246, 183, 22, 1);
+    color: white;
+}
+
 
 /* image-carousel ended*/
 
@@ -920,9 +1084,15 @@
 
 @media(max-width:720px) {
 
-    #popular-recepies-header-class #img1,
+    #popular-recepies-header-class #img1 {
+        width: 60px;
+        height: 120px;
+    }
+
     #popular-recepies-header-class #img2 {
-        display: none;
+        width: 65px;
+        height: 128px;
+        right: 0;
     }
 
     #instaBox #insta-link a,
@@ -948,29 +1118,36 @@
     }
 }
 
-@media(max-width:680px) {
-
-    .box-dining {
-        width: 500px;
-        height: 420px;
-    }
-
-    #dining-out img {
-        height: 326px;
-        width: 500px;
-        object-fit: cover;
-    }
-
-    #image-grid #grid-img-1 {
-
-        height: 300px;
+@media(max-width:690px) {
+    #search-box {
         width: 500px;
     }
 
-    #image-grid #grid-img-2,
-    #image-grid #grid-img-3 {
-        height: 300px;
-        width: 500px;
+    #hero-section {
+        margin-top: 80px;
+        gap: 2px;
+    }
+
+    #navbar {
+        width: 100%;
+        padding: 30px 15px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    #navbar nav {
+        width: 100%;
+    }
+
+    #navbar nav ul {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    #navbar nav ul li {
+        padding: 0 15px;
     }
 
     .best-delieverd-box {
@@ -1002,6 +1179,32 @@
         width: 200%;
         height: 2px;
         background-color: var(--primary-yellow-color);
+    }
+}
+
+@media(max-width:680px) {
+
+    .box-dining {
+        width: 500px;
+        height: 420px;
+    }
+
+    #dining-out img {
+        height: 326px;
+        width: 500px;
+        object-fit: cover;
+    }
+
+    #image-grid #grid-img-1 {
+
+        height: 300px;
+        width: 500px;
+    }
+
+    #image-grid #grid-img-2,
+    #image-grid #grid-img-3 {
+        height: 300px;
+        width: 500px;
     }
 
     #footer {
@@ -1036,32 +1239,6 @@
     #popular-recepie-heading {
         font-size: 28px;
     }
-
-    #search-box {
-        width: 500px;
-    }
-
-    #navbar {
-        width: 100%;
-        padding: 30px 15px;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        gap: 10px;
-    }
-
-    #navbar nav {
-        width: 100%;
-    }
-
-    #navbar nav ul {
-        width: 100%;
-        justify-content: space-between;
-    }
-
-    #navbar nav ul li {
-        padding: 0 15px;
-    }
 }
 
 @media(max-width:650px) {
@@ -1073,11 +1250,6 @@
 
     #search-box p {
         display: none;
-    }
-
-    #hero-section {
-        margin-top: 80px;
-        gap: 2px;
     }
 
 }
@@ -1217,7 +1389,13 @@
     }
 }
 
-@media(max-width:440px) {
+@media(max-width:480px) {
+    #search-bar {
+
+        margin: 58px 143px;
+        padding: 0 2px;
+    }
+
     #search-box {
         width: 360px;
         height: 80px;
@@ -1240,6 +1418,31 @@
     #hero-section p {
         font-size: 22px;
     }
+}
+
+@media(max-width:465px) {
+    #search-box {
+        width: 345px;
+    }
+
+    #search-box div {
+        padding-left: 32px;
+    }
+
+    #hero-section {
+        margin-top: 60px;
+    }
+
+    #hero-section h1 {
+        font-size: 38px;
+    }
+
+    #hero-section p {
+        font-size: 20px;
+    }
+}
+
+@media(max-width:440px) {
 
     #instaBox #insta-link a,
     #instaBox p {
@@ -1327,28 +1530,43 @@
 }
 
 @media(max-width:360px) {
+    #search-box div {
+        padding-left: 25px;
+    }
+
     #search-box {
-        width: 315px;
+        padding-top: 12px;
+        width: 290px;
+        height: auto;
     }
 
     #search-box div {
-        padding-left: 32px;
+        width: 290px;
+        flex-direction: row;
+        padding: 12px 12px;
     }
 
-    #hero-section {
-        margin-top: 60px;
-    }
-
-    #hero-section h1 {
-        font-size: 38px;
+    #search-box input {
+        padding: 0 11.5px;
     }
 
     #hero-section p {
-        font-size: 20px;
+        font-size: 18px;
     }
 }
 
 @media(max-width:350px) {
+    #popular-recepies-header-class #img1 {
+        width: 40px;
+        height: 80px;
+    }
+
+    #popular-recepies-header-class #img2 {
+        width: 45px;
+        height: 88px;
+        right: 0;
+    }
+
     #banner-content p {
         width: 200px;
         font-size: 32px;
@@ -1379,27 +1597,7 @@
     }
 }
 
-@media(max-width:330px) {
-    #search-box div {
-        padding-left: 25px;
-    }
 
-    #search-box {
-        padding-top: 12px;
-        width: 290px;
-        height: auto;
-    }
-
-    #search-box div {
-        width: 290px;
-        flex-direction: row;
-        padding: 12px 12px;
-    }
-
-    #search-box input {
-        padding: 0 11.5px;
-    }
-}
 
 @media(max-width:315px) {
 
