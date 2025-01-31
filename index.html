@@ -122,13 +122,20 @@
         </section>
 
         <section id="image-carousel" class="image-carousel">
+            <div id="buttons-container">
+                <button data-category="Pizza" onclick="changeImages('Pizza', this)" class="active">Pizza</button>
+                <button data-category="Burger" onclick="changeImages('Burger', this)">Burger</button>
+                <button data-category="Slides" onclick="changeImages('Chinese', this)">Chinese</button>
+                <button data-category="Dessert" onclick="changeImages('Drinks', this)">Drinks</button>
+                <button data-category="Drinks" onclick="changeImages('Dessert', this)">Dessert</button>
+            </div>
             <div id="main-div">
                 <div class="box">
                   <p class="label">Popular</p>
-                  <img src="images/Pizza/pizza1.png" alt="" />
+                  <img src="images/Pizza/Pizza1.jpeg" alt="" />
                   <div id="outer-div">
                     <div id="div1">
-                      <h3 class="name">Silician Pizza</h3>
+                      <h3 class="name">Silician</h3>
                       <p class="delivery time">32 min</p>
                     </div>
                     <p>Dough, Mozzarella, Cheddar, Blue, Parmesan</p>
@@ -141,10 +148,10 @@
                 </div>
           
                 <div class="box">
-                  <img src="images/Pizza/pizza2.png" alt="" />
+                  <img src="images/Pizza/Pizza2.jpeg" alt="" />
                   <div id="outer-div">
                     <div id="div1">
-                      <h3 class="name">Silician Pizza</h3>
+                      <h3 class="name">Silician</h3>
                       <p class="delivery time">32 min</p>
                     </div>
                     <p>Dough, Mozzarella, Cheddar, Blue, Parmesan</p>
@@ -158,10 +165,10 @@
           
                 <div class="box">
                   <p class="label">Popular</p>
-                  <img src="images/Pizza/pizza3.png" alt="" />
+                  <img src="images/Pizza/Pizza3.jpeg" alt="" />
                   <div id="outer-div">
                     <div id="div1">
-                      <h3 class="name">Silician Pizza</h3>
+                      <h3 class="name">Silician</h3>
                       <p class="delivery time">32 min</p>
                     </div>
                     <p>Dough, Mozzarella, Cheddar, Blue, Parmesan</p>
@@ -174,10 +181,10 @@
                 </div>
           
                 <div class="box">
-                  <img src="images/Pizza/pizza4.png" alt="" />
+                  <img src="images/Pizza/Pizza4.jpeg" alt="" />
                   <div id="outer-div">
                     <div id="div1">
-                      <h3 class="name">Silician Pizza</h3>
+                      <h3 class="name">Silician</h3>
                       <p class="delivery time">32 min</p>
                     </div>
                     <p>Dough, Mozzarella, Cheddar, Blue, Parmesan</p>
@@ -190,10 +197,10 @@
                 </div>
           
                 <div class="box">
-                  <img src="images/Pizza/pizza5.png" alt="" />
+                  <img src="images/Pizza/Pizza5.jpeg" alt="" />
                   <div id="outer-div">
                     <div id="div1">
-                      <h3 class="name">Silician Pizza</h3>
+                      <h3 class="name">Silician</h3>
                       <p class="delivery time">32 min</p>
                     </div>
                     <p>Dough, Mozzarella, Cheddar, Blue, Parmesan</p>
@@ -206,10 +213,10 @@
                 </div>
           
                 <div class="box">
-                  <img src="images/Pizza/pizza6.png" alt="" />
+                  <img src="images/Pizza/Pizza6.jpeg" alt="" />
                   <div id="outer-div">
                     <div id="div1">
-                      <h3 class="name">Silician Pizza</h3>
+                      <h3 class="name">Silician</h3>
                       <p class="delivery time">32 min</p>
                     </div>
                     <p>Dough, Mozzarella, Cheddar, Blue, Parmesan</p>
@@ -277,6 +284,31 @@
 
     
     </div>
+
+    <script>
+    
+    function changeImages(category, button) {
+        // Change image sources based on the selected category
+        let images = document.querySelectorAll("#main-div img");
+        images.forEach((img, index) => {
+            img.src = `images/${category}/${category}${index + 1}.jpeg`; // Update to match the correct folder structure
+        });
+
+        // Reset the highlight of all buttons
+        let buttons = document.querySelectorAll("#buttons-container button");
+        buttons.forEach(btn => btn.classList.remove("active"));
+
+        // Highlight the clicked button
+        button.classList.add("active");
+    }
+
+    // Default selection - Pizza
+    document.addEventListener("DOMContentLoaded", () => {
+        const pizzaButton = document.querySelector('button[data-category="Pizza"]');
+        pizzaButton.classList.add("active");
+    });
+
+    </script>
 </body>
 
 </html>
