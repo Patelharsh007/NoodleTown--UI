@@ -376,7 +376,7 @@
 
 
 #buttons-container {
-    width: 800px;
+    width: 720px;
     margin: auto;
     display: flex;
     justify-content: center;
@@ -1096,16 +1096,7 @@
     }
 }
 
-@media(max-width:800px) {
-    #buttons-container {
-        width: 200px;
-        margin: auto;
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-        margin-bottom: 20px;
-    }
-}
+
 
 @media(max-width:780px) {
 
@@ -1139,7 +1130,17 @@
     }
 }
 
+
+
 @media(max-width:720px) {
+    #buttons-container {
+        width: 200px;
+        margin: auto;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 20px;
+    }
 
     #popular-recepies-header-class #img1 {
         width: 60px;
