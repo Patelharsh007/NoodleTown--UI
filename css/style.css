@@ -228,6 +228,20 @@ body {
 }
 
 /* Dining-Out */
+
+
+.dining-out-scroller {
+    margin: 0 15px;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 30px 0;
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+    overscroll-behavior-x: contain;
+    overflow-y: hidden;
+    margin: 0 15px;
+}
+
 #dining-out {
     display: flex;
     flex-direction: row;
@@ -269,6 +283,7 @@ body {
 }
 
 /* Dining-Out Ended */
+
 
 /* Best Delieverd */
 #best-delievered {
@@ -880,45 +895,6 @@ body {
 
 @media(max-width:1350px) {
 
-    #dining-out {
-        flex-direction: column;
-        align-items: center;
-        gap: 50px;
-    }
-
-    #dining-out img {
-        height: 326px;
-        width: 650px;
-        object-fit: cover;
-    }
-
-    .box-dining {
-        width: 650px;
-        height: 420px;
-        background-color: #ffffff;
-        border-radius: 8px;
-        box-shadow: 0px 4px 4px 0px #0000001a;
-    }
-
-    .box-dining h3 {
-        padding-left: 30px;
-        font-size: 24px;
-        line-height: 30px;
-    }
-
-    .box-dining p {
-        margin-top: 10px;
-        padding-left: 30px;
-        font-size: 20px;
-        line-height: 27px;
-    }
-
-    #best-delievered h1,
-    #best-delievered p {
-        padding: 0 30px;
-        text-align: center;
-    }
-
     #best-delieverd-container {
         margin-top: auto;
         flex-direction: column;
@@ -995,7 +971,6 @@ body {
     }
 
 }
-
 
 @media(max-width:1220px) {
 
@@ -1261,17 +1236,6 @@ body {
 
 @media(max-width:680px) {
 
-    .box-dining {
-        width: 500px;
-        height: 420px;
-    }
-
-    #dining-out img {
-        height: 326px;
-        width: 500px;
-        object-fit: cover;
-    }
-
     #image-grid #grid-img-1 {
 
         height: 300px;
@@ -1425,6 +1389,10 @@ body {
 
 @media(max-width:520px) {
 
+    #dining-out {
+        gap: 60px;
+    }
+
     .best-delieverd-box:nth-child(1)::after,
     .best-delieverd-box:nth-child(2)::after {
         content: "";
@@ -1434,30 +1402,6 @@ body {
         width: 300px;
         height: 2px;
         background-color: var(--primary-yellow-color);
-    }
-
-    .box-dining {
-        width: 300px;
-        height: 300px;
-    }
-
-    #dining-out img {
-        height: 180px;
-        width: 300px;
-        object-fit: cover;
-    }
-
-    .box-dining h3 {
-        padding-left: 15px;
-        font-size: 22px;
-        line-height: 38px;
-    }
-
-    .box-dining p {
-        margin-top: 10px;
-        padding-left: 15px;
-        font-size: 18px;
-        line-height: 24px;
     }
 
     #best-delievered h1 {
@@ -1521,6 +1465,12 @@ body {
 
 @media(max-width:440px) {
 
+
+    #dining-out {
+        gap: 40px;
+    }
+
+
     #popular-recepie-heading {
         font-size: 28px;
     }
@@ -1551,6 +1501,7 @@ body {
 }
 
 @media(max-width:400px) {
+
     #image-grid {
         padding: 0px;
         margin-top: 90px;

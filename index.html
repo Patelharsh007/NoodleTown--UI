@@ -1,328 +1,357 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NOODLETOWN</title>
 
     <!-- Font-awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css" />
-</head>
+  </head>
 
-<body id="main-body">
+  <body id="main-body">
     <header id="main-header" class="hero">
-        <!-- Navbar -->
-        <div id="navbar">
-            <!-- Logo -->
-            <div id="hero-logo">
-                <p class="nav-heading"><a href="/">Noodletown</a></p>
-            </div>
-
-            <!-- Menu & Cart -->
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#" id="menu">
-                            <p class="nav-heading">Menu</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" id="cart-icon"><i class="fa-solid fa-cart-shopping fa-xl"></i></a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-        <!-- Navbar Ended -->
-
-
-        <div class="container"> <!-- container for wrapping for max-width-->
-            <!-- Hero-middle section -->
-            <div id="hero-section">
-                <h1>NOODLETOWN</h1>
-                <p>Discover best food around you</p>
-            </div>
-            <!-- Hero-middle ended -->
-
-            <!-- Search bar -->
-            <div id="search-bar">
-                <div id="search-box">
-                    <select id="dropdown" name="city" id="city">
-                        <option value="Navsari">Navsari</option>
-                        <option value="Surat" selected>Surat</option>
-                        <option value="Valsad">Valsad</option>
-                    </select>
-                    <p>|</p>
-                    <div>
-                    <i class="fa-solid fa-magnifying-glass"></i>
-
-                    <input id="search-value" for="search-value"
-                        placeholder="Search for restaurant, cuisine, place"></input></div>
-                </div>
-            </div>
+      <!-- Navbar -->
+      <div id="navbar">
+        <!-- Logo -->
+        <div id="hero-logo">
+          <p class="nav-heading"><a href="/">Noodletown</a></p>
         </div>
 
+        <!-- Menu & Cart -->
+        <nav>
+          <ul>
+            <li>
+              <a href="#" id="menu">
+                <p class="nav-heading">Menu</p>
+              </a>
+            </li>
+            <li>
+              <a href="#" id="cart-icon"
+                ><i class="fa-solid fa-cart-shopping fa-xl"></i
+              ></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- Navbar Ended -->
+
+      <div class="container">
+        <!-- container for wrapping for max-width-->
+        <!-- Hero-middle section -->
+        <div id="hero-section">
+          <h1>NOODLETOWN</h1>
+          <p>Discover best food around you</p>
+        </div>
+        <!-- Hero-middle ended -->
+
+        <!-- Search bar -->
+        <div id="search-bar">
+          <div id="search-box">
+            <select id="dropdown" name="city" id="city">
+              <option value="Navsari">Navsari</option>
+              <option value="Surat" selected>Surat</option>
+              <option value="Valsad">Valsad</option>
+            </select>
+            <p>|</p>
+            <div>
+              <i class="fa-solid fa-magnifying-glass"></i>
+
+              <input
+                id="search-value"
+                placeholder="Search for restaurant, cuisine, place"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
 
     <main id="main-part">
+      <!-- Promotion section started -->
 
-        <!-- Promotion section started -->
+      <section id="promotion-section" class="promotion-section">
+        <!-- Dining-Out Article -->
 
-        <section id="promotion-section" class="promotion-section">
-
-            <!-- Dining-Out Article -->
-            <article id="dining-out" class="dining-out">
-                <div class="box-dining">
-                    <img src="images/Dining_Out/img1.jpeg" alt="Image of food">
-                    <h3>Dining Out</h3>
-                    <p>Explore curated lists of top restraunts</p>
-                </div>
-                <div class="box-dining">
-                    <img src="images/Dining_Out/img2.jpeg" alt="Image of food">
-                    <h3>Dining Out</h3>
-                    <p>Explore curated lists of top restraunts</p>
-                </div>
-                <div class="box-dining">
-                    <img src="images/Dining_Out/img3.jpeg" alt="Image of food">
-                    <h3>Dining Out</h3>
-                    <p>Explore curated lists of top restraunts</p>
-                </div>
-            </article>
-
-            <article class="best-delievered" id="best-delievered">
-                <h1>Our best delivered cuisines</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore</p>
-                <div id="best-delieverd-container">
-                    <div class="best-delieverd-box">
-                        <img src="images/Best_Delievered/img1.jpeg" alt="Image of food">
-                        <h3>Chicken Noodles</h3>
-                    </div>
-                    <div class="best-delieverd-box">
-                        <img src="images/Best_Delievered/img2.jpeg" alt="Image of food">
-                        <h3>French Fries</h3>
-                    </div>
-                    <div class="best-delieverd-box">
-                        <img src="images/Best_Delievered/img3.jpeg" alt="Image of food">
-                        <h3>Avacado Mint Noodles</h3>
-                    </div>
-                </div>
-            </article>
-        </section>
-
-        <section id="popular-recepies-header-class">
-            <img id="img1" src="images/Pizza/vector1.png" alt="">
-            <p id="popular-recepie-heading">Popular Recipes</p>
-            <img id="img2" src="images/Pizza/vector2.png" alt="">
-        </section>
-
-        <section id="image-carousel" class="image-carousel">
-            <div id="buttons-container">
-                <button data-category="Pizza" onclick="changeImages('Pizza', this)" class="active">Pizza</button>
-                <button data-category="Burger" onclick="changeImages('Burger', this)">Burger</button>
-                <button data-category="Chinese" onclick="changeImages('Chinese', this)">Chinese</button>
-                <button data-category="Drinks" onclick="changeImages('Drinks', this)">Drinks</button>
-                <button data-category="Dessert" onclick="changeImages('Dessert', this)">Dessert</button>
+        <article class="dining-out-scroller">
+          <div id="dining-out" class="dining-out">
+            <div class="box-dining">
+              <img src="images/Dining_Out/img1.jpeg" alt="Image of food" />
+              <h3>Dining Out</h3>
+              <p>Explore curated lists of top restaurants</p>
             </div>
-            <div id="main-div">
-              <div class="outer-box">
-                <div class="box">
-                  <p class="label">Popular</p>
-                  <img src="images/Pizza/Pizza1.jpeg" alt="" />
-                  <div id="outer-div">
-                    <div id="div1">
-                      <h3 class="name">Silician</h3>
-                      <p class="delivery time">32 min</p>
-                    </div>
-                    <p>Dough, Mozzarella, Cheddar, Blue, Parmesan</p>
-                    <h2>7000NGN</h2>
-                  </div>
-                  
+            <div class="box-dining">
+              <img src="images/Dining_Out/img2.jpeg" alt="Image of food" />
+              <h3>Dining Out</h3>
+              <p>Explore curated lists of top restaurants</p>
+            </div>
+            <div class="box-dining">
+              <img src="images/Dining_Out/img3.jpeg" alt="Image of food" />
+              <h3>Dining Out</h3>
+              <p>Explore curated lists of top restaurants</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="best-delievered" id="best-delievered">
+          <h1>Our best delivered cuisines</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore
+          </p>
+          <div id="best-delieverd-container">
+            <div class="best-delieverd-box">
+              <img src="images/Best_Delievered/img1.jpeg" alt="Image of food" />
+              <h3>Chicken Noodles</h3>
+            </div>
+            <div class="best-delieverd-box">
+              <img src="images/Best_Delievered/img2.jpeg" alt="Image of food" />
+              <h3>French Fries</h3>
+            </div>
+            <div class="best-delieverd-box">
+              <img src="images/Best_Delievered/img3.jpeg" alt="Image of food" />
+              <h3>Avacado Mint Noodles</h3>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section id="popular-recepies-header-class">
+        <img id="img1" src="images/Pizza/vector1.png" alt="" />
+        <p id="popular-recepie-heading">Popular Recipes</p>
+        <img id="img2" src="images/Pizza/vector2.png" alt="" />
+      </section>
+
+      <section id="image-carousel" class="image-carousel">
+        <div id="buttons-container">
+          <button
+            data-category="Pizza"
+            onclick="changeImages('Pizza', this)"
+            class="active"
+          >
+            Pizza
+          </button>
+          <button data-category="Burger" onclick="changeImages('Burger', this)">
+            Burger
+          </button>
+          <button
+            data-category="Chinese"
+            onclick="changeImages('Chinese', this)"
+          >
+            Chinese
+          </button>
+          <button data-category="Drinks" onclick="changeImages('Drinks', this)">
+            Drinks
+          </button>
+          <button
+            data-category="Dessert"
+            onclick="changeImages('Dessert', this)"
+          >
+            Dessert
+          </button>
+        </div>
+        <div id="main-div">
+          <div class="outer-box">
+            <div class="box">
+              <p class="label">Popular</p>
+              <img src="images/Pizza/Pizza1.jpeg" alt="" />
+              <div id="outer-div">
+                <div id="div1">
+                  <h3 class="name">Silician</h3>
+                  <p class="delivery time">32 min</p>
                 </div>
-                <div class="triangle"></div>
-                  <div class="circle">
-                    <i class="fa-solid fa-lock selected"></i>
-                  </div>
+                <p>Dough, Mozzarella, Cheddar, Blue, Parmesan</p>
+                <h2>7000NGN</h2>
               </div>
-          
-              <div class="outer-box">
-                <div class="box">
-                  <img src="images/Pizza/Pizza2.jpeg" alt="" />
-                  <div id="outer-div">
-                    <div id="div1">
-                      <h3 class="name">Silician</h3>
-                      <p class="delivery time">32 min</p>
-                    </div>
-                    <p>Dough, Mozzarella, Cheddar, Blue, Parmesan</p>
-                    <h2>7000NGN</h2>
-                  </div>
+            </div>
+            <div class="triangle"></div>
+            <div class="circle">
+              <i class="fa-solid fa-lock selected"></i>
+            </div>
+          </div>
+
+          <div class="outer-box">
+            <div class="box">
+              <img src="images/Pizza/Pizza2.jpeg" alt="" />
+              <div id="outer-div">
+                <div id="div1">
+                  <h3 class="name">Silician</h3>
+                  <p class="delivery time">32 min</p>
                 </div>
-                <div class="triangle"></div>
-                  <div class="circle">
-                    <i class="fa-solid fa-lock"></i>
-                  </div>
+                <p>Dough, Mozzarella, Cheddar, Blue, Parmesan</p>
+                <h2>7000NGN</h2>
               </div>
-          
-              <div class="outer-box">
-                <div class="box">
-                  <p class="label">Popular</p>
-                  <img src="images/Pizza/Pizza3.jpeg" alt="" />
-                  <div id="outer-div">
-                    <div id="div1">
-                      <h3 class="name">Silician</h3>
-                      <p class="delivery time">32 min</p>
-                    </div>
-                    <p>Dough, Mozzarella, Cheddar, Blue, Parmesan</p>
-                    <h2>7000NGN</h2>
-                  </div>
-                </div>
-                <div class="triangle"></div>
-                  <div class="circle">
-                    <i class="fa-solid fa-lock selected"></i>
-                  </div>
-               </div>
+            </div>
+            <div class="triangle"></div>
+            <div class="circle">
+              <i class="fa-solid fa-lock"></i>
+            </div>
+          </div>
 
-              <div class="outer-box">
-                <div class="box">
-                  <img src="images/Pizza/Pizza4.jpeg" alt="" />
-                  <div id="outer-div">
-                    <div id="div1">
-                      <h3 class="name">Silician</h3>
-                      <p class="delivery time">32 min</p>
-                    </div>
-                    <p>Dough, Mozzarella, Cheddar, Blue, Parmesan</p>
-                    <h2>7000NGN</h2>
-                  </div>
+          <div class="outer-box">
+            <div class="box">
+              <p class="label">Popular</p>
+              <img src="images/Pizza/Pizza3.jpeg" alt="" />
+              <div id="outer-div">
+                <div id="div1">
+                  <h3 class="name">Silician</h3>
+                  <p class="delivery time">32 min</p>
                 </div>
-                <div class="triangle"></div>
-                  <div class="circle">
-                    <i class="fa-solid fa-lock"></i>
-                  </div>
+                <p>Dough, Mozzarella, Cheddar, Blue, Parmesan</p>
+                <h2>7000NGN</h2>
               </div>
-          
-              <div class="outer-box">
-                <div class="box">
-                  <img src="images/Pizza/Pizza5.jpeg" alt="" />
-                  <div id="outer-div">
-                    <div id="div1">
-                      <h3 class="name">Silician</h3>
-                      <p class="delivery time">32 min</p>
-                    </div>
-                    <p>Dough, Mozzarella, Cheddar, Blue, Parmesan</p>
-                    <h2>7000NGN</h2>
-                  </div>
+            </div>
+            <div class="triangle"></div>
+            <div class="circle">
+              <i class="fa-solid fa-lock selected"></i>
+            </div>
+          </div>
+
+          <div class="outer-box">
+            <div class="box">
+              <img src="images/Pizza/Pizza4.jpeg" alt="" />
+              <div id="outer-div">
+                <div id="div1">
+                  <h3 class="name">Silician</h3>
+                  <p class="delivery time">32 min</p>
                 </div>
-                <div class="triangle"></div>
-                  <div class="circle">
-                    <i class="fa-solid fa-lock"></i>
-                  </div>
+                <p>Dough, Mozzarella, Cheddar, Blue, Parmesan</p>
+                <h2>7000NGN</h2>
               </div>
-          
-              <div class="outer-box">
-                <div class="box">
-                  <img src="images/Pizza/Pizza6.jpeg" alt="" />
-                  <div id="outer-div">
-                    <div id="div1">
-                      <h3 class="name">Silician</h3>
-                      <p class="delivery time">32 min</p>
-                    </div>
-                    <p>Dough, Mozzarella, Cheddar, Blue, Parmesan</p>
-                    <h2>7000NGN</h2>
-                  </div>
-                </div>
-                <div class="triangle"></div>
-                  <div class="circle">
-                    <i class="fa-solid fa-lock selected"></i>
-                  </div>
-                </div>
             </div>
-        </section>
+            <div class="triangle"></div>
+            <div class="circle">
+              <i class="fa-solid fa-lock"></i>
+            </div>
+          </div>
 
-        <section id="image-banner">
-            <div id="banner-content">
-                <p>Fastest Food <span>delievery</span> in the town</p>
-            </div>
-        </section>
-
-        <section id="image-grid" class="image-grid-3">
-            <div id="overlay-img1">
-                <img id="grid-img-1" src="images/Grid-Images/img4.jpg" alt="">
-                <div id="image-text">
-                    <p>Buy 2 Get 1 free</p>
+          <div class="outer-box">
+            <div class="box">
+              <img src="images/Pizza/Pizza5.jpeg" alt="" />
+              <div id="outer-div">
+                <div id="div1">
+                  <h3 class="name">Silician</h3>
+                  <p class="delivery time">32 min</p>
                 </div>
+                <p>Dough, Mozzarella, Cheddar, Blue, Parmesan</p>
+                <h2>7000NGN</h2>
+              </div>
             </div>
-            <div class="two-img">
-                <img id="grid-img-2" src="images/Grid-Images/img2.jpeg" alt="">
-                <img id="grid-img-3" src="images/Grid-Images/img3.jpeg" alt="">
+            <div class="triangle"></div>
+            <div class="circle">
+              <i class="fa-solid fa-lock"></i>
             </div>
-        </section>
+          </div>
 
-        <section id="instaBox">
+          <div class="outer-box">
+            <div class="box">
+              <img src="images/Pizza/Pizza6.jpeg" alt="" />
+              <div id="outer-div">
+                <div id="div1">
+                  <h3 class="name">Silician</h3>
+                  <p class="delivery time">32 min</p>
+                </div>
+                <p>Dough, Mozzarella, Cheddar, Blue, Parmesan</p>
+                <h2>7000NGN</h2>
+              </div>
+            </div>
+            <div class="triangle"></div>
+            <div class="circle">
+              <i class="fa-solid fa-lock selected"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="image-banner">
+        <div id="banner-content">
+          <p>Fastest Food <span>delievery</span> in the town</p>
+        </div>
+      </section>
+
+      <section id="image-grid" class="image-grid-3">
+        <div id="overlay-img1">
+          <img id="grid-img-1" src="images/Grid-Images/img4.jpg" alt="" />
+          <div id="image-text">
+            <p>Buy 2 Get 1 free</p>
+          </div>
+        </div>
+        <div class="two-img">
+          <img id="grid-img-2" src="images/Grid-Images/img2.jpeg" alt="" />
+          <img id="grid-img-3" src="images/Grid-Images/img3.jpeg" alt="" />
+        </div>
+      </section>
+
+      <section id="instaBox">
         <div id="instagram-box">
-                <img src="images/InstaBox/img1.jpg" alt="">
-                <img src="images/InstaBox/img2.jpg" alt="">
+          <img src="images/InstaBox/img1.jpg" alt="" />
+          <img src="images/InstaBox/img2.jpg" alt="" />
 
-                <img src="images/InstaBox/img3.jpg" alt="">
-                <img src="images/InstaBox/img6.jpg" alt="">
+          <img src="images/InstaBox/img3.jpg" alt="" />
+          <img src="images/InstaBox/img6.jpg" alt="" />
 
-                <img src="images/InstaBox/img5.jpg" alt="">
-                <img src="images/InstaBox/img4.jpg" alt="">  
+          <img src="images/InstaBox/img5.jpg" alt="" />
+          <img src="images/InstaBox/img4.jpg" alt="" />
         </div>
         <div id="insta-disp">
-            <p>Follow Us On Instagram To See Pictures Taken By Our Customers</p>
-            <p id="insta-link"><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram fa-xl"></i> : @santorins</a></p>
+          <p>Follow Us On Instagram To See Pictures Taken By Our Customers</p>
+          <p id="insta-link">
+            <a href="https://www.instagram.com/" target="_blank"
+              ><i class="fa-brands fa-instagram fa-xl"></i> : @santorins</a
+            >
+          </p>
         </div>
-        </section>
+      </section>
     </main>
     <section id="footer">
-        <div id="mobile-box">
-            <img id="mobile" src="images/footer/mobile1.jpeg" alt="">
-            <div id="sub-img">
-                <h1>Download our app</h1>
-                <div>
-                <a href="https://play.google.com/">
-                <img src="images/footer/playstore.png" alt="" ></a>
-                <a href="https://www.apple.com/in/app-store/">
-                <img src="images/footer/appstore.png" alt=""></a>
-            </div>
+      <div id="mobile-box">
+        <img id="mobile" src="images/footer/mobile1.jpeg" alt="" />
+        <div id="sub-img">
+          <h1>Download our app</h1>
+          <div>
+            <a href="https://play.google.com/">
+              <img src="images/footer/playstore.png" alt=""
+            /></a>
+            <a href="https://www.apple.com/in/app-store/">
+              <img src="images/footer/appstore.png" alt=""
+            /></a>
+          </div>
         </div>
-
-        
+      </div>
     </section>
 
-    
-    </div>
-
     <script>
-    
-    function changeImages(category, button) {
+      function changeImages(category, button) {
         // Change image sources based on the selected category
         let images = document.querySelectorAll("#main-div img");
         images.forEach((img, index) => {
-            img.src = `images/${category}/${category}${index + 1}.jpeg`; // Update to match the correct folder structure
+          img.src = `images/${category}/${category}${index + 1}.jpeg`; // Update to match the correct folder structure
         });
 
         // Reset the highlight of all buttons
         let buttons = document.querySelectorAll("#buttons-container button");
-        buttons.forEach(btn => btn.classList.remove("active"));
+        buttons.forEach((btn) => btn.classList.remove("active"));
 
         // Highlight the clicked button
         button.classList.add("active");
-    }
+      }
 
-    // Default selection - Pizza
-    document.addEventListener("DOMContentLoaded", () => {
-        const pizzaButton = document.querySelector('button[data-category="Pizza"]');
+      // Default selection - Pizza
+      document.addEventListener("DOMContentLoaded", () => {
+        const pizzaButton = document.querySelector(
+          'button[data-category="Pizza"]'
+        );
         pizzaButton.classList.add("active");
-    });
-    
-
+      });
     </script>
-</body>
-
+  </body>
 </html>
