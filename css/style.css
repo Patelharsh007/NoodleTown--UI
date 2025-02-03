@@ -287,7 +287,7 @@ body {
 
 /* Best Delieverd */
 #best-delievered {
-    margin-top: 108px;
+    margin: 108px 20px 0;
 }
 
 #best-delievered h1 {
@@ -307,7 +307,7 @@ body {
 }
 
 #best-delieverd-container {
-    margin-top: 72px;
+    margin: 72px 15px 0;
     display: flex;
     justify-content: space-between;
 }
@@ -343,7 +343,7 @@ body {
     position: absolute;
     top: 40%;
     left: 110%;
-    width: 95%;
+    width: 80%;
     height: 2px;
     background-color: var(--primary-yellow-color);
 }
@@ -895,43 +895,6 @@ body {
 
 @media(max-width:1350px) {
 
-    #best-delieverd-container {
-        margin-top: auto;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .best-delieverd-box {
-        margin-top: 70px;
-        width: 346px;
-        height: 417px;
-        display: flex;
-    }
-
-    .best-delieverd-box img {
-        width: 346px;
-        height: 346px;
-        border-radius: 50%;
-        object-fit: cover;
-    }
-
-    .best-delieverd-box h3 {
-        font-size: 30px;
-        line-height: 40px;
-    }
-
-    .best-delieverd-box:nth-child(1)::after,
-    .best-delieverd-box:nth-child(2)::after {
-        content: "";
-        position: absolute;
-        top: 110%;
-        left: -50%;
-        width: 200%;
-        height: 2px;
-        background-color: var(--primary-yellow-color);
-    }
-
     #banner-content {
         margin-left: 25px;
     }
@@ -971,6 +934,24 @@ body {
     }
 
 }
+
+@media(max-width:1320px) {
+    .dining-out {
+        display: flex;
+        gap: 48px;
+        width: 100%;
+    }
+
+    @media(max-width:1280px) {
+
+        .best-delieverd-box:nth-child(1)::after,
+        .best-delieverd-box:nth-child(2)::after {
+            left: 110%;
+            width: 50%;
+        }
+    }
+}
+
 
 @media(max-width:1220px) {
 
@@ -1015,8 +996,14 @@ body {
     }
 }
 
-
 @media(max-width:1135px) {
+
+    .best-delieverd-box:nth-child(1)::after,
+    .best-delieverd-box:nth-child(2)::after {
+        left: 115%;
+        width: 25%;
+    }
+
     #popular-recepie-heading {
         width: auto;
     }
@@ -1036,6 +1023,14 @@ body {
 }
 
 @media(max-width:1050px) {
+
+    #best-delievered {
+        display: none;
+    }
+
+    #popular-recepies-header-class {
+        margin-top: 100px;
+    }
 
 
     #image-grid #grid-img-1 {
@@ -1096,6 +1091,7 @@ body {
         height: 50px;
     }
 }
+
 
 
 
@@ -1202,39 +1198,11 @@ body {
         padding: 0 15px;
     }
 
-    .best-delieverd-box {
-        margin-top: 70px;
-        width: 260px;
-        height: 340px;
-        display: flex;
-    }
-
-    .best-delieverd-box img {
-        width: 260px;
-        height: 260px;
-        border-radius: 50%;
-        object-fit: cover;
-    }
-
-    .best-delieverd-box h3 {
-        padding-top: 15px;
-        font-size: 26px;
-        line-height: 32px;
-    }
-
-    .best-delieverd-box:nth-child(1)::after,
-    .best-delieverd-box:nth-child(2)::after {
-        content: "";
-        position: absolute;
-        top: 110%;
-        left: -50%;
-        width: 200%;
-        height: 2px;
-        background-color: var(--primary-yellow-color);
-    }
 }
 
 @media(max-width:680px) {
+
+
 
     #image-grid #grid-img-1 {
 
@@ -1296,6 +1264,10 @@ body {
 }
 
 @media(max-width:600px) {
+    #dining-out {
+        gap: 60px;
+    }
+
     #image-grid {
         padding: 0px;
         margin-top: 90px;
@@ -1387,28 +1359,6 @@ body {
     }
 }
 
-@media(max-width:520px) {
-
-    #dining-out {
-        gap: 60px;
-    }
-
-    .best-delieverd-box:nth-child(1)::after,
-    .best-delieverd-box:nth-child(2)::after {
-        content: "";
-        position: absolute;
-        top: 110%;
-        left: -7%;
-        width: 300px;
-        height: 2px;
-        background-color: var(--primary-yellow-color);
-    }
-
-    #best-delievered h1 {
-        font-size: 42px;
-        line-height: 64px;
-    }
-}
 
 @media(max-width:480px) {
     #search-bar {
@@ -1442,6 +1392,31 @@ body {
 }
 
 @media(max-width:465px) {
+
+    #dining-out {
+        gap: 50px;
+    }
+
+
+    #dining-out img {
+        width: 275px;
+    }
+
+    .box-dining {
+        width: 275px;
+
+    }
+
+
+    .box-dining p {
+        padding-left: 15px;
+        padding-bottom: 20px;
+        font-size: 13.3px;
+        font-weight: 300;
+        line-height: 21px;
+        text-align: left;
+    }
+
     #search-box {
         width: 345px;
     }
@@ -1464,12 +1439,6 @@ body {
 }
 
 @media(max-width:440px) {
-
-
-    #dining-out {
-        gap: 40px;
-    }
-
 
     #popular-recepie-heading {
         font-size: 28px;
@@ -1501,7 +1470,6 @@ body {
 }
 
 @media(max-width:400px) {
-
     #image-grid {
         padding: 0px;
         margin-top: 90px;
